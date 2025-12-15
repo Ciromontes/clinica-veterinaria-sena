@@ -14,6 +14,7 @@ import DashboardRecepcionista from "./components/DashboardRecepcionista";
 import DashboardAdmin from "./components/DashboardAdmin";
 import HistoriasPage from "./components/HistoriasPage";
 import TablaUsuarios from "./components/TablaUsuarios";
+import HealthCheck from "./components/HealthCheck";
 
 // Ruta protegida por token
 const PrivateRoute = ({ children }: { children: JSX.Element }) => {
@@ -42,6 +43,7 @@ const ResolveDashboard = () => {
 const App: React.FC = () => (
     <AuthProvider>
         <BrowserRouter>
+            <HealthCheck />
             <Routes>
                 {/* Público */}
                 <Route path="/login" element={<Login />} />
