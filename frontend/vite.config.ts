@@ -6,6 +6,13 @@ export default defineConfig({
   plugins: [react()],
   base: '/app/', // Base path para servir desde /app en producción
   server: {
+    proxy: {
+      '/api': {
+        target: 'http://localhost:3000',
+        changeOrigin: true,
+        secure: false,
+      }
+    },
     hmr: {
       overlay: false // Desactiva el overlay de errores en desarrollo
     }
