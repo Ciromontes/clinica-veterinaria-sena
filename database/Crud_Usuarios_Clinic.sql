@@ -468,16 +468,16 @@ CREATE TABLE `usuario` (
 --
 
 INSERT INTO `usuario` (`id`, `nombre`, `email`, `password`, `rol`, `activo`, `Intentos_Fallidos`, `Fecha_Bloqueo`, `id_cliente`, `id_veterinario`) VALUES (1,'Juan Pérez','juan.perez@email.com','123456','CLIENTE',1,0,NULL,1,NULL);
-INSERT INTO `usuario` (`id`, `nombre`, `email`, `password`, `rol`, `activo`, `Intentos_Fallidos`, `Fecha_Bloqueo`, `id_cliente`, `id_veterinario`) VALUES (2,'Administrador General','admin@Crud_Usuarios_Clinic.com','admin123','ADMIN',1,0,NULL,NULL,NULL);
-INSERT INTO `usuario` (`id`, `nombre`, `email`, `password`, `rol`, `activo`, `Intentos_Fallidos`, `Fecha_Bloqueo`, `id_cliente`, `id_veterinario`) VALUES (3,'Dra. Ana Veterinaria','ana.vet@Crud_Usuarios_Clinic.com','vet123','VETERINARIO',1,0,NULL,NULL,3);
-INSERT INTO `usuario` (`id`, `nombre`, `email`, `password`, `rol`, `activo`, `Intentos_Fallidos`, `Fecha_Bloqueo`, `id_cliente`, `id_veterinario`) VALUES (5,'Lucía Dueña','lucia.cliente@Crud_Usuarios_Clinic.com','cliente123','CLIENTE',1,0,NULL,1,NULL);
+INSERT INTO `usuario` (`id`, `nombre`, `email`, `password`, `rol`, `activo`, `Intentos_Fallidos`, `Fecha_Bloqueo`, `id_cliente`, `id_veterinario`) VALUES (2,'Administrador General','admin@clinicaveterinaria.com','admin123','ADMIN',1,0,NULL,NULL,NULL);
+INSERT INTO `usuario` (`id`, `nombre`, `email`, `password`, `rol`, `activo`, `Intentos_Fallidos`, `Fecha_Bloqueo`, `id_cliente`, `id_veterinario`) VALUES (3,'Dra. Ana Veterinaria','ana.vet@clinicaveterinaria.com','vet123','VETERINARIO',1,0,NULL,NULL,3);
+INSERT INTO `usuario` (`id`, `nombre`, `email`, `password`, `rol`, `activo`, `Intentos_Fallidos`, `Fecha_Bloqueo`, `id_cliente`, `id_veterinario`) VALUES (5,'Lucía Dueña','lucia.cliente@clinicaveterinaria.com','cliente123','CLIENTE',1,0,NULL,1,NULL);
 INSERT INTO `usuario` (`id`, `nombre`, `email`, `password`, `rol`, `activo`, `Intentos_Fallidos`, `Fecha_Bloqueo`, `id_cliente`, `id_veterinario`) VALUES (6,'Pedro Ramírez','pedro.ramirez@email.com','123456','CLIENTE',1,0,NULL,3,NULL);
 INSERT INTO `usuario` (`id`, `nombre`, `email`, `password`, `rol`, `activo`, `Intentos_Fallidos`, `Fecha_Bloqueo`, `id_cliente`, `id_veterinario`) VALUES (7,'Laura González','laura.gonzalez@email.com','123456','CLIENTE',1,0,NULL,4,NULL);
 INSERT INTO `usuario` (`id`, `nombre`, `email`, `password`, `rol`, `activo`, `Intentos_Fallidos`, `Fecha_Bloqueo`, `id_cliente`, `id_veterinario`) VALUES (8,'Miguel Sánchez','miguel.sanchez@email.com','123456','CLIENTE',1,0,NULL,5,NULL);
 INSERT INTO `usuario` (`id`, `nombre`, `email`, `password`, `rol`, `activo`, `Intentos_Fallidos`, `Fecha_Bloqueo`, `id_cliente`, `id_veterinario`) VALUES (9,'Carlos Martínez','carlos.martinez@email.com','123456','CLIENTE',1,0,NULL,2,NULL);
 INSERT INTO `usuario` (`id`, `nombre`, `email`, `password`, `rol`, `activo`, `Intentos_Fallidos`, `Fecha_Bloqueo`, `id_cliente`, `id_veterinario`) VALUES (10,'Dr. Juan Carlos Pérez','juan.perez@veterinaria.com','vet123','VETERINARIO',1,0,NULL,NULL,1);
 INSERT INTO `usuario` (`id`, `nombre`, `email`, `password`, `rol`, `activo`, `Intentos_Fallidos`, `Fecha_Bloqueo`, `id_cliente`, `id_veterinario`) VALUES (11,'Dra. María Elena Rodríguez','maria.rodriguez@veterinaria.com','vet123','VETERINARIO',1,0,NULL,NULL,2);
-INSERT INTO `usuario` (`id`, `nombre`, `email`, `password`, `rol`, `activo`, `Intentos_Fallidos`, `Fecha_Bloqueo`, `id_cliente`, `id_veterinario`) VALUES (14,'Super Administrador','superadmin@Crud_Usuarios_Clinic.com','admin123','ADMIN',1,0,NULL,NULL,NULL);
+INSERT INTO `usuario` (`id`, `nombre`, `email`, `password`, `rol`, `activo`, `Intentos_Fallidos`, `Fecha_Bloqueo`, `id_cliente`, `id_veterinario`) VALUES (14,'Super Administrador','superadmin@clinicaveterinaria.com','admin123','ADMIN',1,0,NULL,NULL,NULL);
 
 --
 -- Table structure for table `veterinario`
@@ -512,7 +512,7 @@ CREATE TABLE `veterinario` (
 
 INSERT INTO `veterinario` (`ID_Veterinario`, `Nombre`, `Apellidos`, `Identificacion`, `Titulacion`, `Fecha_Titulacion`, `Telefono`, `Correo`, `Especialidad`, `Estado`, `Fecha_Registro`) VALUES (1,'Juan Carlos','Pérez González','12345678','Médico Veterinario','2020-12-15','3001234567','juan.perez@veterinaria.com','Medicina General','Activo','2025-06-22 00:46:17');
 INSERT INTO `veterinario` (`ID_Veterinario`, `Nombre`, `Apellidos`, `Identificacion`, `Titulacion`, `Fecha_Titulacion`, `Telefono`, `Correo`, `Especialidad`, `Estado`, `Fecha_Registro`) VALUES (2,'María Elena','Rodríguez López','87654321','Médico Veterinario Zootecnista','2019-06-20','3007654321','maria.rodriguez@veterinaria.com','Cirugía','Activo','2025-06-22 00:46:17');
-INSERT INTO `veterinario` (`ID_Veterinario`, `Nombre`, `Apellidos`, `Identificacion`, `Titulacion`, `Fecha_Titulacion`, `Telefono`, `Correo`, `Especialidad`, `Estado`, `Fecha_Registro`) VALUES (3,'Ana','Veterinaria López','11223344','Médico Veterinario','2021-03-10','3001112233','ana.vet@Crud_Usuarios_Clinic.com','Medicina General','Activo','2025-10-04 22:31:53');
+INSERT INTO `veterinario` (`ID_Veterinario`, `Nombre`, `Apellidos`, `Identificacion`, `Titulacion`, `Fecha_Titulacion`, `Telefono`, `Correo`, `Especialidad`, `Estado`, `Fecha_Registro`) VALUES (3,'Ana','Veterinaria López','11223344','Médico Veterinario','2021-03-10','3001112233','ana.vet@clinicaveterinaria.com','Medicina General','Activo','2025-10-04 22:31:53');
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
